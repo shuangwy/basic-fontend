@@ -31,7 +31,6 @@
 //   }
 // };
 // animate();
-// console.log(i);
 
 for (let row = 1; row < 10; row++) {
   for (let column = 1; column <= row; column++) {
