@@ -32,11 +32,21 @@
 // };
 // animate();
 
-for (let row = 1; row < 10; row++) {
-  for (let column = 1; column <= row; column++) {
-    document.write(
-      `${row}*${column}=${row * column} &nbsp&nbsp&nbsp&nbsp&nbsp`
-    );
-  }
-  document.write("<br/>");
+// for (let row = 1; row < 10; row++) {
+//   for (let column = 1; column <= row; column++) {
+//     document.write(
+//       `${row}*${column}=${row * column} &nbsp&nbsp&nbsp&nbsp&nbsp`
+//     );
+//   }
+//   document.write("<br/>");
+// }
+
+let a = 200;
+function func() {
+  const a = 1;
+  return function () {
+    console.log(a);
+  };
 }
+const f2 = func();
+f2();

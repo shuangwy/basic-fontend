@@ -80,22 +80,38 @@
 // });
 // console.log("script end");
 
-console.log("1", 1);
-setTimeout(() => {
-  console.log("2", 2);
-});
+// console.log("1", 1);
+// setTimeout(() => {
+//   console.log("2", 2);
+// });
 
-let flag = true;
+// let flag = true;
+// new Promise((resolve, reject) => {
+//   console.log("3", 3);
+//   resolve(4);
+//   //   reject(6);
+// })
+//   .catch((n) => {
+//     console.log(`${n}`, n);
+//     throw new Error(7);
+//   })
+//   .then((r) => {
+//     console.log(`${r}`, 222, r);
+//   });
+// console.log("5", 5);
+
 new Promise((resolve, reject) => {
-  console.log("3", 3);
   resolve(4);
-  //   reject(6);
 })
-  .catch((n) => {
-    console.log(`${n}`, n);
-    throw new Error(7);
+  .then((para) => {
+    console.log("para", para);
+    return 8;
   })
+  .then((res) => {
+    console.log("res", res);
+    return 10;
+  })
+  .then(3, 19)
   .then((r) => {
-    console.log(`${r}`, 222, r);
+    console.log("r", r);
   });
-console.log("5", 5);
